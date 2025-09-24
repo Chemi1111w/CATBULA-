@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catbula - Stickers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            width: 60px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        header h1 {
+            display: inline;
+            font-size: 2em;
+        }
+        nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #111;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: transform 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            color: #ff6600;
+            transform: scale(1.2);
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .intro {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .sticker-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .sticker-card {
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .sticker-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.9);
+        }
+        .sticker-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .sticker-card p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #ccc;
+        }
+        video {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Logo Catbula">
+        <h1>Catbula - Stickers</h1>
+    </header><section class="intro">
+    <p>Bienvenido a <strong>Catbula</strong>, tu espacio dedicado a los stickers más creativos y divertidos. Aquí encontrarás una colección única de imágenes y videos diseñados para darle un toque especial a tus conversaciones y proyectos. 🐾✨</p>
+</section>
+
+<section id="stickers">
+    <h2>Galería de Stickers</h2>
+    <div class="sticker-gallery">
+        <div class="sticker-card">
+            <img src="dan.jpg" alt="Sticker Dan">
+            <p>dan.jpg</p>
+        </div>
+        <div class="sticker-card">
+            <img src="descargar_7.jpg" alt="Sticker Descargar 7">
+            <p>descargar_7.jpg</p>
+        </div>
+    </div>
+</section>
+
+<section id="videos">
+    <h2>Video de Stickers</h2>
+    <video controls>
+        <source src="stickers_Catbula_posible_final.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+    </video>
+</section>
+
+<nav>
+    <a href="#stickers">🖼️ Stickers</a>
+    <a href="#videos">🎥 Videos</a>
+    <a href="#contacto">📩 Contacto</a>
+</nav>
+
+<footer id="contacto">
+    <p>Contacto: catbula@stickers.com</p>
+</footer>
+
+</body>
+</html>
